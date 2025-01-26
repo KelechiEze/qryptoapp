@@ -1,99 +1,155 @@
 /* LandingPage.css */
 .landing-page-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    padding: 2rem;
-    color: #333; /* Default text color */
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /* Overlay for opacity effect */
-  .landing-page-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .left-container1 {
-    flex: 1;
-    padding: 3rem;
-    z-index: 2;
-    text-align: left;
-    margin-left: 50px;
-  }
-  
-  .landing-title {
-    font-size: 2.3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color:rgba(0, 0, 0, 0.5);
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Adds text depth */
-  }
-  
-  .landing-text {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    color: grey;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  
-  .get-started-button {
-    padding: 0.75rem 1.5rem;
-    background-color: #2563eb;
-    color: white;
-    border: none;
-    border-radius: 0.6rem;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, background-color 0.3s;
-  }
-  
-  .get-started-button:hover {
-    background-color: #1d4ed8;
-    transform: translateY(-3px); /* Lift effect */
-  }
-  
-  .right-container {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-    gap: 1.5rem;
-    margin-right: 40px;
-    padding: 9rem;
-    z-index: 2;
-  }
-  
-  .feature-card {
-    background-color: #fff;
-    border-radius: 1rem;
-    padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #333; /* Default text color */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Overlay for opacity effect */
+.landing-page-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.left-container1 {
+  flex: 1;
+  padding: 3rem;
+  z-index: 2;
+  text-align: left;
+  margin-left: 50px;
+}
+
+/* Landing Title */
+.landing-title {
+  font-size: 1.8rem; /* Reduce font size for mobile */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Landing Text */
+.landing-text {
+  font-size: 0.9rem; /* Smaller text for mobile */
+  margin-bottom: 1.5rem;
+  color: grey;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.get-started-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-3px); /* Lift effect */
+}
+
+/* Right Container */
+.right-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 1.5rem;
+  margin-right: 40px;
+  padding: 9rem;
+  z-index: 2;
+}
+
+/* Feature Card */
+.feature-card1 {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card1 p {
+  font-size: 14px; /* Slightly smaller font for mobile */
+  color: grey;
+}
+
+.feature-card1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature Icon */
+.feature-icon {
+  font-size: 1.4rem; /* Adjust icon size for mobile */
+  color: #2563eb;
+  margin-bottom: 0.8rem;
+}
+
+/* Media Query for Mobile Responsiveness (375px) */
+@media screen and (max-width: 375px) {
+  .landing-page-container {
+      display: flex; /* Use flexbox for layout */
+      flex-direction: column; /* Stack children vertically */
+      padding: 0.3rem;
   }
 
-  .feature-card p {
-    font-size: 15px;
-    color: grey;
+  .left-container1 {
+      padding: 1.5rem 0.3rem;
+      text-align: left;
   }
-  
-  .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+
+  .landing-title {
+      font-size: 1.5rem; /* Slightly smaller title */
   }
-  
+
+  .landing-text {
+      font-size: 0.85rem; /* Slightly smaller description text */
+  }
+
+  .get-started-button {
+      padding: 0.6rem 1rem;
+      font-size: 0.8rem; /* Compact button */
+  }
+
+  .right-container {
+      display: grid; /* Ensure cards are in a grid layout */
+      grid-template-columns: 1fr; /* Single column on mobile */
+      gap: 1rem; /* Add space between cards */
+      width: 100%; /* Full width on small screens */
+      margin-top: 1rem; /* Add space between left and right containers */
+      padding: 1rem; /* Add smaller padding */
+      z-index: 2;
+  }
+
+  .feature-card1 {
+      padding: 0.5rem; /* Reduce padding further */
+      font-size: 0.75rem; /* Reduce font size for the text inside the card */
+      width: 85%; /* Make cards smaller */
+      margin: 0 auto; /* Center the card horizontally */
+  }
+
   .feature-icon {
-    font-size: 1.6rem;
-    color: #2563eb;
-    margin-bottom: 1rem;
+      font-size: 1rem; /* Reduce icon size */
   }
-  
+
+  .feature-card1 p {
+      font-size: 0.7rem; /* Reduce paragraph font size */
+  }
+}

@@ -196,3 +196,64 @@
       transform: scale(1);
   }
 }
+
+@media screen and (max-width: 375px) {
+  .crypto-exchange-section {
+    padding: 2rem 1.5rem; /* Reduce padding for smaller screens */
+    background-size: cover; /* Keep the background image responsive */
+  }
+
+  .highlight {
+    font-size: 0.7rem; /* Adjust font size for smaller screens */
+    padding: 0.2rem 0.5rem; /* Reduce padding inside highlight */
+    margin-bottom: 0.8rem; /* Adjust spacing below */
+  }
+
+  .section-title1 {
+    font-size: 1.5rem; /* Adjust title size */
+    margin-bottom: 1.5rem; /* Reduce spacing below */
+  }
+
+  .stats-container {
+    flex-direction: column; /* Stack stats vertically */
+    gap: 1rem; /* Reduce spacing between items */
+    padding: 2rem; /* Reduce padding inside the container */
+    width: 100%; /* Adjust to fit screen width */
+  }
+
+  .stat-title {
+    font-size: 0.8rem; /* Adjust size for titles */
+  }
+
+  .stat-value {
+    font-size: 1.5rem; /* Adjust size for values */
+  }
+
+  .divider {
+    display: none; /* Hide divider on smaller screens */
+  }
+
+  .floating-icon {
+    width: 35px; /* Reduce icon size */
+  }
+
+  .icon-doge {
+    top: 5%;
+    left: 5%; /* Adjust positioning */
+  }
+
+  .icon-bitcoin {
+    top: 40%;
+    left: 60%; /* Adjust positioning */
+  }
+
+  .icon-binance {
+    bottom: 10%;
+    left: 20%; /* Adjust positioning */
+  }
+
+  .icon-avatar {
+    top: 15%;
+    right: 5%; /* Adjust positioning */
+  }
+}

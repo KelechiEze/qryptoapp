@@ -230,3 +230,89 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 375px) {
+  .market-section {
+    padding: 1rem;
+    margin: 50px auto 0;
+  }
+
+  .market-header {
+    margin-bottom: 1rem;
+  }
+
+  .update-badge {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .market-table {
+    border: none;
+    overflow-x: auto; /* Enable horizontal scrolling for tables on small screens */
+  }
+
+  .table-header, .table-row {
+    grid-template-columns: 1fr 1fr; /* Reduce columns to fit smaller screens */
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .name-pair {
+    gap: 0.5rem;
+    flex-direction: column; /* Stack name and icon vertically for smaller width */
+    align-items: flex-start;
+  }
+
+  .crypto-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .crypto-name {
+    font-size: 0.9rem;
+  }
+
+  .star-icon {
+    font-size: 1rem;
+  }
+
+  .price, .change {
+    font-size: 0.8rem;
+  }
+
+  .chart-container {
+    width: 30px;
+    height: 30px;
+  }
+
+  .trade-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Make animations slightly quicker for smaller devices */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

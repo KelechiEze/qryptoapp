@@ -208,3 +208,94 @@
     line-height: 1.4;
     margin: 0;
 }
+
+@media screen and (max-width: 375px) {
+    .why-choose-section {
+        display: flex; /* Ensure flexbox is used */
+        flex-direction: column; /* Stack containers vertically */
+        padding: 2rem; /* Reduce padding for smaller screens */
+        height: auto; /* Allow height to adjust dynamically */
+    }
+
+    .left-container, .right-container1 {
+        width: 100%; /* Ensure full width for both containers */
+        padding: 0; /* Remove extra padding */
+        margin-bottom: 2rem; /* Add spacing between sections */
+    }
+
+    /* Adjust images for responsiveness */
+    .feedback-image,
+    .profile-card-image {
+        width: 220px; /* Reduce image size */
+    }
+
+    .feedback-image {
+        position: relative; /* Ensure proper positioning */
+        top: 10%; /* Adjust positioning for smaller screens */
+        left: 1%; /* Center image better */
+    }
+
+    .profile-card-image {
+        position: relative; /* Ensure proper positioning */
+        bottom: 30%; /* Adjust positioning for smaller screens */
+        left: 30%;
+    }
+
+    /* Adjust typography */
+    .highlight {
+        font-size: 0.6rem; /* Reduce text size */
+    }
+
+    .my-section {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .paragraph {
+        font-size: 0.8rem; /* Adjust paragraph size */
+    }
+
+    /* Features section adjustments */
+    .features {
+        display: flex; /* Ensure flexbox is used */
+        flex-direction: column; /* Stack feature cards vertically */
+        gap: 1rem; /* Adjust gap between cards */
+    }
+
+    .feature-card {
+        min-width: 100%; /* Make feature cards take full width */
+        max-width: 100%; /* Limit width to container size */
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    /* Adjust icons */
+    .icon {
+        font-size: 1.2rem; /* Adjust icon size */
+    }
+
+    /* Cards section adjustments */
+    .cards-container {
+        margin-top: 0.5rem; /* Reduce spacing above cards */
+    }
+
+    .card {
+        width: 100%; /* Make cards take full width */
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .card-lower {
+        margin-top: 1rem; /* Reduce spacing between cards */
+    }
+
+    .card-icon {
+        font-size: 1.5rem; /* Reduce icon size */
+    }
+
+    .card-title {
+        font-size: 0.9rem; /* Adjust title size */
+    }
+
+    .card-text {
+        font-size: 0.8rem; /* Adjust text size */
+    }
+}
+

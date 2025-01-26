@@ -105,10 +105,6 @@ body {
   display: flex; 
 }
 
-.right-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-    gap: 1.5rem; /* Proper spacing between grid items */
-}
+
 
 

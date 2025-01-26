@@ -23,25 +23,25 @@ const LandingPage = () => {
 
       {/* Right Container */}
       <div className="right-container">
-        <div className="feature-card">
+        <div className="feature-card1">
           <div className="feature-icon">
             <FontAwesomeIcon icon={faBolt} />
           </div>
           <p>Instant Connection</p>
         </div>
-        <div className="feature-card">
+        <div className="feature-card1">
           <div className="feature-icon">
             <FontAwesomeIcon icon={faBriefcase} />
           </div>
           <p>Instant Conclusion</p>
         </div>
-        <div className="feature-card">
+        <div className="feature-card1">
           <div className="feature-icon">
             <FontAwesomeIcon icon={faChartBar} />
           </div>
           <p>Detailed Statistics</p>
         </div>
-        <div className="feature-card">
+        <div className="feature-card1">
           <div className="feature-icon">
             <FontAwesomeIcon icon={faPlug} />
           </div>
