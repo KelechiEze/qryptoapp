@@ -15,52 +15,36 @@ const Header = () => {
     <header className="header">
       {/* Logo */}
       <div className="logo">
-        <img src={logoImage} alt="Smart Mine Logo" className="logo-image" />
+        <img src={logoImage} alt="Logo" className="logo-image" />
       </div>
+
+      {/* Regular Navigation Links */}
+      <nav className="nav">
+        <NavLink to="/" className="nav-link">Home</NavLink>
+        <NavLink to="/about" className="nav-link">About Us</NavLink>
+        <NavLink to="/services" className="nav-link">Services</NavLink>
+        <NavLink to="/contact" className="nav-link">Contact</NavLink>
+      </nav>
+      <button className="sign-in-button">Sign In</button>
 
       {/* Hamburger Icon */}
       <div className="hamburger" onClick={toggleMenu}>
         <AiOutlineMenu size={24} />
       </div>
 
-      {/* Navigation Menu */}
+      {/* Mobile Navigation */}
       <nav className={`nav-menu ${menuOpen ? "open" : ""}`}>
-        {/* Close Icon */}
+        {/* Close Menu Icon */}
         <button className="close-menu" onClick={toggleMenu}>
           <AiOutlineClose size={24} />
         </button>
 
         <ul>
-          <li>
-            <NavLink to="/" className="nav-link" activeClassName="active" onClick={toggleMenu}>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" className="nav-link" activeClassName="active" onClick={toggleMenu}>
-              About Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/market" className="nav-link" activeClassName="active" onClick={toggleMenu}>
-              Market
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/blog" className="nav-link" activeClassName="active" onClick={toggleMenu}>
-              Blog
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" className="nav-link" activeClassName="active" onClick={toggleMenu}>
-              Contact Us
-            </NavLink>
-          </li>
+          <li><NavLink to="/" className="nav-link" onClick={toggleMenu}>Home</NavLink></li>
+          <li><NavLink to="/about" className="nav-link" onClick={toggleMenu}>About Us</NavLink></li>
+          <li><NavLink to="/services" className="nav-link" onClick={toggleMenu}>Services</NavLink></li>
+          <li><NavLink to="/contact" className="nav-link" onClick={toggleMenu}>Contact</NavLink></li>
         </ul>
-
-        <button className="sign-in-button" onClick={toggleMenu}>
-          Sign In
-        </button>
       </nav>
     </header>
   );

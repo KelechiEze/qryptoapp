@@ -20,37 +20,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Header Styles */
-.header {
-  display: flex;
-  justify-content: space-around; /* Ensure balanced spacing */
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #2563eb;
-}
-
-.nav a {
-  margin: 0 1rem;
-  color: #4b5563;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav a:hover {
-  color: #2563eb;
-}
-
 
 /* Buttons */
 .primary-button {
@@ -96,14 +65,6 @@ body {
   margin: 0 auto; /* Center-align sections */
 }
 
-/* Additional Styling for Consistency */
-.header {
-  padding: 1rem 5rem; /* Larger padding for a premium feel */
-}
-
-.nav {
-  display: flex; 
-}
 
 
 
