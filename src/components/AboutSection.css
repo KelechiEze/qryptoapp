@@ -1,0 +1,209 @@
+/* Container for the entire section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: #f5f6fe;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  animation: fadeInSection 1s ease-out;
+}
+
+/* About content wrapper */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 2rem;
+  animation: slideInFromBottom 1s ease-out;
+}
+
+/* Keyframes for section fade-in */
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Left container for text and form */
+.left3 {
+  flex: 1;
+  max-width: 50%;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.about-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #1e1e1e;
+  margin-bottom: 1rem;
+  animation: textReveal 1.5s ease-out;
+}
+
+@keyframes textReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Call-to-action form */
+.cta-form {
+  display: flex;
+  gap: 1rem;
+  max-width: 400px;
+}
+
+.email-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.email-input:focus {
+  border-color: #5b67f2;
+  transform: scale(1.05);
+}
+
+.cta-button {
+  background-color: #5b67f2;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #4a5bcc;
+  transform: scale(1.1);
+  animation: buttonPulse 0.5s ease-in-out;
+}
+
+@keyframes buttonPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Right container for images */
+.right3 {
+  flex: 1;
+  position: relative;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: slideInFromRight 1s ease-out;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Coins image */
+.coin-image {
+  position: absolute;
+  top: -20px;
+  left: -50px;
+  z-index: 2;
+}
+
+.coins {
+  width: 180px; /* Adjust the size of the coins image */
+  animation: floatCoins 2s infinite ease-in-out, fadeInElement 1s ease-out 0.5s;
+}
+
+@keyframes fadeInElement {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Phone mockups */
+.phone-mockup {
+  position: relative;
+  z-index: 1;
+}
+
+.phones {
+  width: 500px; /* Adjust the size of the phones image */
+  animation: slideInFromBottom 1.2s ease-out;
+}
+
+/* Floating animation for coins */
+@keyframes floatCoins {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Slide-in from bottom */
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,232 @@
+.market-section {
+  padding: 2rem;
+  background-color: #f9fafb;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin-top: 100px;
+  max-width: 1100px; /* Set the desired maximum width */
+  margin: 100px auto 0; /* Center the section horizontally */
+  animation: fadeIn 1s ease-in; /* Fade-in effect for the entire section */
+}
+
+.market-header {
+  margin-bottom: 1.5rem;
+  animation: slideDown 1s ease-in; /* Slide-down effect */
+}
+
+.update-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #5b67f2;
+  background-color: #eef2ff;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in 0.5s; /* Fade-in with a delay */
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #333;
+  animation: slideDown 1s ease-in 0.2s; /* Slide-down effect with delay */
+}
+
+.market-table {
+  border: 1px solid #ddd;
+  overflow: hidden;
+  animation: fadeInUp 1s ease-in 0.5s; /* Fade-in and move up effect */
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #f3f4f6;
+  font-weight: bold;
+  color: #6b7280;
+  animation: fadeInLeft 1s ease-in; /* Slide-in from the left */
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+  animation: fadeInRight 1s ease-in 0.5s; /* Slide-in from the right */
+}
+
+.table-row:hover {
+  background-color: #f9fafb;
+}
+
+.name-pair {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.crypto-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  animation: bounceIn 1s ease-in-out; /* Bounce-in effect for icons */
+}
+
+.crypto-name {
+  font-weight: bold; /* Makes the cryptocurrency name bold */
+}
+
+.star-icon {
+  font-size: 1.2rem;
+  color: #bdbdbd; /* Gray color for transparency effect */
+  cursor: pointer;
+  transition: color 0.3s;
+  animation: scaleUp 1s ease-in; /* Scale-up animation */
+}
+
+.star-icon:hover {
+  color: gold; /* Optional: Change color on hover to give a rating effect */
+}
+
+.price {
+  font-weight: 400;
+  animation: fadeInRight 1s ease-in 0.5s; /* Slide-in from the right */
+}
+
+.change {
+  font-size: 0.875rem;
+  animation: fadeInLeft 1s ease-in 0.5s; /* Slide-in from the left */
+}
+
+.change.positive {
+  color: #10b981;
+}
+
+.change.negative {
+  color: #ef4444;
+}
+
+.chart-container {
+  width: 40px; /* Reduce the width of the chart */
+  height: 40px; /* Keep the height consistent */
+  margin: 0 auto; /* Center the chart horizontally */
+  overflow: hidden; /* Prevent overflow if needed */
+  cursor: pointer;
+  animation: zoomIn 1s ease-in-out; /* Zoom-in effect */
+}
+
+.chart img {
+  width: 60px;
+}
+
+.trade-btn {
+  background-color: #eef2ff;
+  color: #5b67f2;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: fadeIn 1s ease-in 0.7s; /* Fade-in effect with delay */
+}
+
+.trade-btn:hover {
+  background-color: #5b67f2;
+  color: #fff;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

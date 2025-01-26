@@ -1,0 +1,210 @@
+.why-choose-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+    background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    height: 30em;
+}
+
+/* Left container styling */
+.left-container {
+    flex: 1;
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center; /* Center image-wrapper horizontally */
+    align-items: flex-start; /* Align content to the top */
+}
+
+/* Image wrapper styling */
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Move the feedback image upward and adjust its position */
+.feedback-image {
+    position: absolute;
+    top: 20%; /* Reduced top positioning to move it up */
+    left: 42%; /* Adjust positioning as needed */
+    width: 290px;
+    z-index: 1;
+    transform: rotate(5deg) scale(1.1);
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Move the profile card image upward and adjust its position */
+.profile-card-image {
+    position: absolute;
+    bottom: 50%; /* Move up by increasing bottom percentage */
+    left: 10%; /* Adjust positioning as needed */
+    width: 290px;
+    z-index: 3;
+    transform: scale(1.1);
+    animation: float 3s ease-in-out infinite;
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.right-container1 {
+    flex: 1;
+    padding: 1rem;
+    max-height: 400px;
+    align-items: flex-start; /* Align all items to the start (left) */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center items vertically */
+    gap: 1rem; /* Add spacing between items */
+}
+
+.highlight {
+    color: #7f56d9;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block; /* Ensure it takes up full width and stacks */
+    text-align: left; /* Align text to the left */
+}
+
+.my-section {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #1f2937;
+    text-align: left; /* Align heading to the left */
+    margin: 0; /* Remove default margins */
+}
+
+.paragraph {
+    font-size: 0.9rem; /* Matches .description font size */
+    line-height: 1.6; /* Ensure better readability */
+    color: #6b7280; /* Matches the description's color scheme */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 2rem; /* Keeps consistent spacing */
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+
+.gradient-text {
+    background: linear-gradient(90deg, #7f56d9, #9e84f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+
+.features {
+    display: flex; /* Change to flexbox for horizontal alignment */
+    gap: 1.5rem; /* Spacing between feature cards */
+    align-items: center; /* Align cards vertically */
+    justify-content: flex-start; /* Align cards to the start */
+    flex-wrap: wrap; /* Allow wrapping if there’s not enough horizontal space */
+}
+
+.feature-card {
+
+    flex: 1; /* Make the cards flexible */
+    min-width: 200px; /* Set a minimum width for the cards */
+    max-width: 300px; /* Optional: cap the maximum width */
+    background: linear-gradient(145deg, #ffffff, #f0f2f5);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #7f56d9;
+    margin-bottom: 1rem;
+}
+
+/* Cards Container */
+.cards-container {
+    position: relative;
+    margin-top: 1rem; /* Adds space above the cards */
+}
+
+/* Individual Card */
+.card {
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    padding: 1.5rem;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Visible shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 0 auto; /* Center-align the cards */
+    width: 550px; /* Reduced width slightly */
+    margin-top: -30px;
+    z-index: 2; /* Keep the first card above the second */
+}
+
+/* Second Card Styling */
+.card-lower {
+    margin-top: 1.5rem; /* Reduced spacing between the two cards */
+    z-index: 1; /* Lower z-index for the second card */
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Icon and Text Wrapper */
+.card-content {
+    display: flex; /* Arrange the icon and text horizontally */
+    align-items: flex-start; /* Align items to the top */
+    gap: 1rem; /* Spacing between the icon and text */
+}
+
+/* Card Icon */
+.card-icon {
+    font-size: 1.7rem;
+    color: #2563eb;
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+/* Text Wrapper */
+.card-text-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack the title and text vertically */
+    gap: 0.5rem; /* Spacing between title and text */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin: 0;
+}
+
+/* Card Text */
+.card-text {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.4;
+    margin: 0;
+}

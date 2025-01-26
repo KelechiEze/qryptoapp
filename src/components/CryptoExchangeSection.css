@@ -1,0 +1,198 @@
+.crypto-exchange-section {
+  position: relative;
+  padding: 5rem 7rem;
+  background-color: #f9fafb;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 70px;
+
+  /* Add the background image */
+  background-image: url('../assets/chartz.png'); /* Replace with your image URL */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Make the background image stay in one place while scrolling */
+  z-index: -1;
+
+  /* Add a semi-transparent overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  backdrop-filter: blur(5px); /* Optional: Add a blur effect for a frosted-glass look */
+
+  /* Add entrance animation */
+  animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Highlight Text */
+.highlight {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7f56d9;
+  background: #eef2ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+
+  /* Add scale animation */
+  animation: popIn 1s ease-out;
+}
+
+@keyframes popIn {
+  0% {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Section Title */
+.section-title1 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+
+  /* Add fade-in effect */
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Stats Container */
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3.5rem;
+  background: #ffffff;
+  border-radius: 0.3rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 75%; /* Adjust the width as needed (percentage-based) */
+  max-width: 900px; /* Optional: Add a maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+
+  /* Slide-in animation */
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateX(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* Individual Stat */
+.stat {
+  text-align: center;
+  animation: zoomIn 1.2s ease-out;
+}
+
+@keyframes zoomIn {
+  0% {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.stat-title {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Divider */
+.divider {
+  width: 1px;
+  height: 3rem;
+  background: #e5e7eb;
+}
+
+/* Floating Icons */
+.floating-icon {
+  position: absolute;
+  animation: float 6s ease-in-out infinite, fadeInIcons 2s ease-out;
+}
+
+.icon-doge {
+  top: 10%;
+  left: 10%;
+  width: 50px;
+}
+
+.icon-bitcoin {
+  top: 50%;
+  left: 70%;
+  width: 50px;
+}
+
+.icon-binance {
+  bottom: 20%;
+  left: 30%;
+  width: 50px;
+}
+
+.icon-avatar {
+  top: 20%;
+  right: 10%;
+  width: 50px;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+/* Fade-in for icons */
+@keyframes fadeInIcons {
+  0% {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
