@@ -197,6 +197,7 @@
   }
 }
 
+/* Media query for 375px screens */
 @media screen and (max-width: 375px) {
   .crypto-exchange-section {
     padding: 2rem 1.5rem; /* Reduce padding for smaller screens */
@@ -257,3 +258,66 @@
     right: 5%; /* Adjust positioning */
   }
 }
+
+/* Media query for 425px screens */
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  .crypto-exchange-section {
+    padding: 2rem 2rem; /* Slightly increase padding for larger screens */
+    background-size: cover; /* Ensure the background image remains responsive */
+  }
+
+  .highlight {
+    font-size: 0.8rem; /* Slightly larger font size */
+    padding: 0.3rem 0.6rem; /* Adjust padding inside highlight */
+    margin-bottom: 1rem; /* Adjust spacing below */
+  }
+
+  .section-title1 {
+    font-size: 1.8rem; /* Slightly larger title size */
+    margin-bottom: 1.8rem; /* Adjust spacing below */
+  }
+
+  .stats-container {
+    flex-direction: column; /* Stack stats vertically (same as 375px) */
+    gap: 1.5rem; /* Slightly larger gap between items */
+    padding: 2.5rem; /* Adjust padding inside the container */
+    width: 90%; /* Adjust width slightly */
+  }
+
+  .stat-title {
+    font-size: 0.9rem; /* Slightly larger font size for titles */
+  }
+
+  .stat-value {
+    font-size: 1.7rem; /* Slightly larger size for values */
+  }
+
+  .divider {
+    display: none; /* Keep divider hidden */
+  }
+
+  .floating-icon {
+    width: 40px; /* Adjust icon size */
+  }
+
+  .icon-doge {
+    top: 7%;
+    left: 7%; /* Adjust positioning */
+  }
+
+  .icon-bitcoin {
+    top: 45%;
+    left: 65%; /* Adjust positioning */
+  }
+
+  .icon-binance {
+    bottom: 15%;
+    left: 25%; /* Adjust positioning */
+  }
+
+  .icon-avatar {
+    top: 18%;
+    right: 8%; /* Adjust positioning */
+  }
+}
+

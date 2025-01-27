@@ -1,0 +1,259 @@
+/* Overall container */
+.contact-us-container6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #fff;
+    gap: 2rem;
+    margin: 100px auto; /* Center the container */
+    max-width: 1200px; /* Limit the size */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    animation: fadeIn 1.2s ease-in-out; /* Add fade-in animation */
+  }
+  
+  /* Animation for page load */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start with a slight slide up */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at the normal position */
+    }
+  }
+  
+  /* Reduce the content size inside */
+  .contact-us-container6 > div {
+    padding: 1rem; /* Add internal padding for better spacing */
+  }
+  
+  /* Left container */
+  .left-container6 {
+    flex: 1;
+    min-width: 300px; /* Ensure a minimum width */
+  }
+  
+  .section-heading6 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-description6 {
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form6 .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form6 input,
+  .contact-form6 textarea {
+    flex: 1;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.2rem;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  .contact-form6 input::placeholder,
+  .contact-form6 textarea::placeholder {
+    color: #6b7280;
+  }
+  
+  .contact-form6 .submit-button {
+    padding: 0.8rem 2rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-form6 .submit-button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05); /* Subtle scaling effect on hover */
+  }
+  
+  /* Right container */
+  .right-container6 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 50px;
+  }
+  
+  .info-item6 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f8f9fa;
+    width: 70%;
+    padding: 1rem 1.1rem;
+  }
+  
+  .icon-container6 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info-icon6 {
+    width: 60%;
+    height: auto;
+  }
+  
+  .info-text6 h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .info-text6 p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 375px) {
+    .contact-us-container6 {
+      flex-direction: column; /* Stack containers vertically */
+      gap: 1rem; /* Reduce gap for smaller screens */
+      padding: 1rem; /* Adjust padding */
+      margin-top: 90px;
+    }
+  
+    /* Left container adjustments */
+    .left-container6 {
+      flex: unset;
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    /* Right container adjustments */
+    .right-container6 {
+      flex: unset;
+      width: 100%; /* Full width for smaller screens */
+      margin-top: 0; /* Remove unnecessary top margin */
+    }
+  
+    /* Form input adjustments */
+    .contact-form6 .form-row {
+      flex-direction: column; /* Stack inputs vertically */
+      gap: 0.5rem; /* Reduce gap between fields */
+    }
+  
+    .contact-form6 input,
+    .contact-form6 textarea {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    /* Submit button */
+    .contact-form6 .submit-button {
+      width: 100%; /* Full-width button */
+    }
+  
+    /* Icon container adjustments */
+    .info-item6 {
+      flex-direction: column; /* Stack icon and text vertically */
+      align-items: flex-start; /* Align text to the left */
+      gap: 0.5rem;
+    }
+  
+    .icon-container6 {
+      width: 40px; /* Reduce icon size */
+      height: 40px;
+    }
+  
+    .info-icon6 {
+      width: 80%; /* Reduce the image size */
+    }
+  
+    .info-text6 h4 {
+      font-size: 0.9rem; /* Reduce heading size */
+    }
+  
+    .info-text6 p {
+      font-size: 0.8rem; /* Reduce paragraph size */
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 425px) {
+    .contact-us-container6 {
+      flex-direction: column; /* Stack containers vertically */
+      gap: 1rem; /* Reduce gap for smaller screens */
+      padding: 1rem; /* Adjust padding */
+      margin-top: 90px;
+    }
+  
+    /* Left container adjustments */
+    .left-container6 {
+      flex: unset;
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    /* Right container adjustments */
+    .right-container6 {
+      flex: unset;
+      width: 100%; /* Full width for smaller screens */
+      margin-top: 0; /* Remove unnecessary top margin */
+    }
+  
+    /* Form input adjustments */
+    .contact-form6 .form-row {
+      flex-direction: column; /* Stack inputs vertically */
+      gap: 0.5rem; /* Reduce gap between fields */
+    }
+  
+    .contact-form6 input,
+    .contact-form6 textarea {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    /* Submit button */
+    .contact-form6 .submit-button {
+      width: 100%; /* Full-width button */
+    }
+  
+    /* Icon container adjustments */
+    .info-item6 {
+      flex-direction: column; /* Stack icon and text vertically */
+      align-items: flex-start; /* Align text to the left */
+      gap: 0.5rem;
+    }
+  
+    .icon-container6 {
+      width: 40px; /* Reduce icon size */
+      height: 40px;
+    }
+  
+    .info-icon6 {
+      width: 80%; /* Reduce the image size */
+    }
+  
+    .info-text6 h4 {
+      font-size: 0.9rem; /* Reduce heading size */
+    }
+  
+    .info-text6 p {
+      font-size: 0.8rem; /* Reduce paragraph size */
+    }
+  }
+  

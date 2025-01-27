@@ -46,7 +46,7 @@
   background-color: #2563eb;
   color: white;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -93,22 +93,13 @@
   margin-bottom: 1.5rem;
 }
 
-.close-menu {
-  background: none;
-  border: none;
-  color: #4b5563;
-  font-size: 1.5rem;
-  align-self: flex-end;
-  cursor: pointer;
-}
-
 /* Beautifully Styled Mobile Navigation Link Styles */
 .nav-menu li a {
   color: #4b5563; /* Neutral gray for default text color */
   text-decoration: none;
-  font-size: 18px; /* Slightly larger text for better readability */
-  padding: 0.8rem 1rem; /* Add padding for a button-like appearance */
-  border-radius: 0.5rem; /* Rounded edges for a modern feel */
+  font-size: 14px; /* Slightly larger text for better readability */
+  padding: 0.8rem 0.7rem; /* Add padding for a button-like appearance */
+  border-radius: 0.3rem; /* Rounded edges for a modern feel */
   display: block;
   text-align: center; /* Center the text for consistency */
   background: linear-gradient(90deg, #e0e7ff, #f1f5f9); /* Subtle gradient background */
@@ -136,7 +127,7 @@
   box-shadow: 0 3px 6px rgba(37, 99, 235, 0.5); /* Add more emphasis to the active link */
 }
 
-/* Responsive Styles for Mobile */
+/* Responsive Styles for Mobile (375px screens and below) */
 @media (max-width: 375px) {
   .header {
     padding: 0.8rem 1.5rem; /* Reduce padding on small screens */
@@ -161,5 +152,52 @@
 
   .nav-menu ul {
     display: none;
+  }
+
+  .sign-in-button {
+    margin-right: 15px;
+    margin-top: -5px;
+  }
+}
+
+/* Responsive Styles for Mobile (425px screens) */
+@media (max-width: 425px) and (min-width: 376px) {
+  .header {
+    padding: 0.8rem 1.8rem; /* Adjust padding slightly for larger screens */
+  }
+
+  .logo {
+    font-size: 1.8rem; /* Increase logo size for better readability */
+    margin-left: 50px;
+  }
+
+  .nav {
+    display: none; /* Hide desktop nav menu */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu */
+  }
+
+  .nav-menu {
+    width: 65%; /* Adjust the mobile menu width */
+  }
+
+  .nav-menu li a {
+    font-size: 15px; /* Slightly larger text for better readability */
+    padding: 0.9rem 1rem; /* Adjust padding for more clickable space */
+  }
+
+  .sign-in-button {
+    padding: 0.5rem 1rem; /* Increase padding for better usability */
+    font-size: 14px; /* Adjust font size for the button */
+    margin-right: 20px; /* Adjust spacing to align properly */
+    margin-top: -5px;
+  }
+
+  /* Adjust logo alignment if needed */
+  .logo {
+    flex-grow: 1; /* Center the logo */
+    text-align: left;
   }
 }

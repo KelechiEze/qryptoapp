@@ -10,6 +10,8 @@ import BlogSection from "./components/BlogSection";
 import Footer from "./components/Footer";
 import AboutPage from "./components/AboutPage";
 import MarketPage from "./components/MarketPage";
+import ContactUsPage from "./components/ContactUsPage"; 
+import BlogPage from "./components/BlogPage";
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const App = () => {
         {/* About page */}
         <Route path="/about" element={<AboutPage />} />
         <Route path="/market" element={<MarketPage />} />
+        <Route path="/contact" element={<ContactUsPage />} />
+        <Route path="/blog" element={<BlogPage />} />
       </Routes>
     </Router>
   );

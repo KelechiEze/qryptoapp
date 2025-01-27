@@ -1,0 +1,143 @@
+/* Main container */
+.blog-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Coming soon content */
+  .coming-soon-container {
+    z-index: 2;
+    padding: 1rem;
+  }
+  
+  .coming-soon-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2563eb;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .coming-soon-description {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-top: 1rem;
+  }
+  
+  /* Floating images */
+  .floating-img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.8;
+  }
+  
+  .img1 {
+    top: 50%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+  
+  .img2 {
+    bottom: 70%;
+    right: 35%;
+    animation-delay: 2s;
+  }
+  
+  .img3 {
+    top: 70%;
+    right: 15%;
+    animation-delay: 4s;
+  }
+  
+  /* Float animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design for 375px screens */
+  @media screen and (max-width: 375px) {
+    .blog-page {
+      padding: 1rem; /* Add padding for smaller screens */
+    }
+  
+    .coming-soon-title {
+      font-size: 1.8rem; /* Reduce font size */
+    }
+  
+    .coming-soon-description {
+      font-size: 0.85rem; /* Reduce text size */
+    }
+  
+    /* Floating images adjustments */
+    .floating-img {
+      width: 50px; /* Smaller images */
+      height: 50px;
+    }
+  
+    .img1 {
+      top: 20%; /* Adjust position */
+      left: 10%;
+    }
+  
+    .img2 {
+      bottom: 15%;
+      right: 50%;
+    }
+  
+    .img3 {
+      top: 35%;
+      right: 15%;
+    }
+  }
+  
+  /* Responsive Design for 375px screens */
+  @media screen and (max-width: 425px) {
+    .blog-page {
+      padding: 1rem; /* Add padding for smaller screens */
+    }
+  
+    .coming-soon-title {
+      font-size: 1.8rem; /* Reduce font size */
+    }
+  
+    .coming-soon-description {
+      font-size: 0.85rem; /* Reduce text size */
+    }
+  
+    /* Floating images adjustments */
+    .floating-img {
+      width: 50px; /* Smaller images */
+      height: 50px;
+    }
+  
+    .img1 {
+      top: 20%; /* Adjust position */
+      left: 10%;
+    }
+  
+    .img2 {
+      bottom: 15%;
+      right: 50%;
+    }
+  
+    .img3 {
+      top: 35%;
+      right: 15%;
+    }
+  }
+  

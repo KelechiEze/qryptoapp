@@ -35,11 +35,6 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       <nav className={`nav-menu ${menuOpen ? "open" : ""}`}>
-        {/* Close Menu Icon */}
-        <button className="close-menu" onClick={toggleMenu}>
-          <AiOutlineClose size={24} />
-        </button>
-
         <ul>
           <li><NavLink to="/" className="nav-link" onClick={toggleMenu}>Home</NavLink></li>
           <li><NavLink to="/about" className="nav-link" onClick={toggleMenu}>About Us</NavLink></li>

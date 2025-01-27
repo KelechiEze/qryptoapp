@@ -1,4 +1,4 @@
-/* LandingPage.css */
+/* Overall container */
 .landing-page-container {
   display: flex;
   justify-content: space-around;
@@ -9,6 +9,7 @@
   color: #333; /* Default text color */
   overflow: hidden;
   position: relative;
+  animation: slideInLeft 1.2s ease-out; /* Slide in animation for the entire container */
 }
 
 /* Overlay for opacity effect */
@@ -21,31 +22,47 @@
   height: 100%;
 }
 
+/* Slide-in from left animation */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .left-container1 {
   flex: 1;
   padding: 3rem;
   z-index: 2;
   text-align: left;
   margin-left: 50px;
+  animation: fadeIn 1.2s ease-out; /* Add fade-in for smoother entry */
 }
 
 /* Landing Title */
 .landing-title {
-  font-size: 1.8rem; /* Reduce font size for mobile */
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.5);
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: slideUp 1.2s ease-out;
 }
 
 /* Landing Text */
 .landing-text {
-  font-size: 0.9rem; /* Smaller text for mobile */
+  font-size: 0.9rem;
   margin-bottom: 1.5rem;
   color: grey;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-out; /* Fade-in animation */
 }
 
+/* Button Hover Effect */
 .get-started-button {
   padding: 0.75rem 1.5rem;
   background-color: #2563eb;
@@ -62,6 +79,7 @@
 .get-started-button:hover {
   background-color: #1d4ed8;
   transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Add shadow intensity */
 }
 
 /* Right Container */
@@ -73,6 +91,19 @@
   margin-right: 40px;
   padding: 9rem;
   z-index: 2;
+  animation: slideInRight 1.2s ease-out; /* Slide-in from the right */
+}
+
+/* Slide-in from right animation */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Feature Card */
@@ -83,11 +114,7 @@
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.feature-card1 p {
-  font-size: 14px; /* Slightly smaller font for mobile */
-  color: grey;
+  animation: fadeIn 1.4s ease-out;
 }
 
 .feature-card1:hover {
@@ -97,60 +124,148 @@
 
 /* Feature Icon */
 .feature-icon {
-  font-size: 1.4rem; /* Adjust icon size for mobile */
+  font-size: 1.4rem;
   color: #2563eb;
   margin-bottom: 0.8rem;
+  animation: popUp 1s ease-out;
 }
 
-/* Media Query for Mobile Responsiveness (375px) */
-@media screen and (max-width: 375px) {
+/* Pop-up animation for icons */
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Query for 375px Screens */
+@media (max-width: 375px) {
   .landing-page-container {
-      display: flex; /* Use flexbox for layout */
-      flex-direction: column; /* Stack children vertically */
-      padding: 0.3rem;
-      margin-top: 100px;
+    flex-direction: column;
+    padding: 0.3rem;
+    margin-top: 100px;
+    animation: slideInLeft 1.2s ease-out;
   }
 
   .left-container1 {
-      padding: 1.5rem 0.3rem;
-      text-align: left;
+    padding: 1.5rem 0.3rem;
+    text-align: left;
   }
 
   .landing-title {
-      font-size: 1.5rem; /* Slightly smaller title */
+    font-size: 1.5rem;
   }
 
   .landing-text {
-      font-size: 0.85rem; /* Slightly smaller description text */
+    font-size: 0.85rem;
   }
 
   .get-started-button {
-      padding: 0.6rem 1rem;
-      font-size: 0.8rem; /* Compact button */
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
   }
 
   .right-container {
-      display: grid; /* Ensure cards are in a grid layout */
-      grid-template-columns: 1fr; /* Single column on mobile */
-      gap: 1rem; /* Add space between cards */
-      width: 100%; /* Full width on small screens */
-      margin-top: 1rem; /* Add space between left and right containers */
-      padding: 1rem; /* Add smaller padding */
-      z-index: 2;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    z-index: 2;
   }
 
   .feature-card1 {
-      padding: 0.5rem; /* Reduce padding further */
-      font-size: 0.75rem; /* Reduce font size for the text inside the card */
-      width: 85%; /* Make cards smaller */
-      margin: 0 auto; /* Center the card horizontally */
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    width: 85%;
+    margin: 0 auto;
+    animation: slideUp 1.4s ease-out;
   }
 
   .feature-icon {
-      font-size: 1rem; /* Reduce icon size */
+    font-size: 1rem;
   }
 
   .feature-card1 p {
-      font-size: 0.7rem; /* Reduce paragraph font size */
+    font-size: 0.7rem;
+  }
+}
+
+/* Media Query for 425px Screens */
+@media (max-width: 425px) {
+  .landing-page-container {
+    flex-direction: column;
+    padding: 0.4rem;
+    margin-top: 80px;
+    animation: slideInLeft 1.2s ease-out;
+  }
+
+  .left-container1 {
+    padding: 1.7rem 0.1rem;
+    text-align: left;
+  }
+
+  .landing-title {
+    font-size: 1.7rem;
+  }
+
+  .landing-text {
+    font-size: 0.9rem;
+  }
+
+  .get-started-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .right-container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    width: 100%;
+    margin-top: 1.2rem;
+    padding: 1.2rem;
+    z-index: 2;
+  }
+
+  .feature-card1 {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    width: 90%;
+    margin: 0 auto;
+    animation: slideUp 1.4s ease-out;
+  }
+
+  .feature-icon {
+    font-size: 1.2rem;
+  }
+
+  .feature-card1 p {
+    font-size: 0.75rem;
   }
 }
