@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 import logoImage from "../assets/header-logo1.png"; // Update the path as needed
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Hamburger and close icons
+import { AiOutlineMenu } from "react-icons/ai"; // Hamburger and close icons
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +26,7 @@ const Header = () => {
         <NavLink to="/blog" className="nav-link">Blog</NavLink>
         <NavLink to="/contact" className="nav-link">Contact</NavLink>
       </nav>
-      <button className="sign-in-button">Sign In</button>
+      <NavLink to="/register" className="sign-in-button">Sign In</NavLink>
 
       {/* Hamburger Icon */}
       <div className="hamburger" onClick={toggleMenu}>

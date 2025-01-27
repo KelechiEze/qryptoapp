@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import routing components
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"; // Import routing components
 import Header from "./components/Header";
 import LandingPage from "./components/LandingPage";
 import WhyChooseSection from "./components/WhyChooseSection";
@@ -10,13 +10,20 @@ import BlogSection from "./components/BlogSection";
 import Footer from "./components/Footer";
 import AboutPage from "./components/AboutPage";
 import MarketPage from "./components/MarketPage";
-import ContactUsPage from "./components/ContactUsPage"; 
+import ContactUsPage from "./components/ContactUsPage";
 import BlogPage from "./components/BlogPage";
+import RegisterPage from "./components/RegisterPage";
+import LoginPage from "./components/LoginPage";
 
 const App = () => {
+  const location = useLocation();
+
+  // Hide the Header for both RegisterPage and LoginPage routes
+  const shouldShowHeader = !["/register", "/login"].includes(location.pathname);
+
   return (
-    <Router>
-      <Header />
+    <>
+      {shouldShowHeader && <Header />}
       <Routes>
         {/* Main page showing all sections */}
         <Route
@@ -38,9 +45,19 @@ const App = () => {
         <Route path="/market" element={<MarketPage />} />
         <Route path="/contact" element={<ContactUsPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
+    </>
+  );
+};
+
+const AppWrapper = () => {
+  return (
+    <Router>
+      <App />
     </Router>
   );
 };
 
-export default App;
+export default AppWrapper;

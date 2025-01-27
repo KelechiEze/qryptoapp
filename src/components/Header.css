@@ -40,20 +40,24 @@
   color: #2563eb;
 }
 
-/* Sign In Button */
 .sign-in-button {
-  padding: 0.4rem 0.8rem; /* Reduced padding to make the button more compact */
-  background-color: #2563eb;
+  background-color: #6366f1; /* Button color */
   color: white;
+  padding: 0.5rem 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .sign-in-button:hover {
-  background-color: #1d4ed8;
+  background-color: #4f46e5; /* Hover color */
 }
+
 
 /* Hamburger Menu */
 .hamburger {
