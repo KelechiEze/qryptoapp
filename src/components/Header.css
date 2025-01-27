@@ -102,18 +102,38 @@
   cursor: pointer;
 }
 
-/* Mobile Navigation Link Styles */
+/* Beautifully Styled Mobile Navigation Link Styles */
 .nav-menu li a {
-  color: #4b5563;
+  color: #4b5563; /* Neutral gray for default text color */
   text-decoration: none;
-  font-size: 18px;
-  padding: 0.5rem;
-  transition: color 0.3s, background-color 0.3s;
+  font-size: 18px; /* Slightly larger text for better readability */
+  padding: 0.8rem 1rem; /* Add padding for a button-like appearance */
+  border-radius: 0.5rem; /* Rounded edges for a modern feel */
+  display: block;
+  text-align: center; /* Center the text for consistency */
+  background: linear-gradient(90deg, #e0e7ff, #f1f5f9); /* Subtle gradient background */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
 }
 
 .nav-menu li a:hover {
-  color: #2563eb;
-  background-color: #f1f5f9;
+  color: white; /* Change text color on hover for contrast */
+  background: linear-gradient(90deg, #2563eb, #1d4ed8); /* Add a vibrant gradient hover effect */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3); /* Enhance shadow on hover */
+}
+
+/* Divider between links for separation */
+.nav-menu li:not(:last-child) a {
+  margin-bottom: 1rem; /* Add space between navigation items */
+}
+
+/* Active link styling */
+.nav-menu li a.active {
+  color: white;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  font-weight: bold; /* Highlight the active link */
+  box-shadow: 0 3px 6px rgba(37, 99, 235, 0.5); /* Add more emphasis to the active link */
 }
 
 /* Responsive Styles for Mobile */

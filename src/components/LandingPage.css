@@ -108,6 +108,7 @@
       display: flex; /* Use flexbox for layout */
       flex-direction: column; /* Stack children vertically */
       padding: 0.3rem;
+      margin-top: 100px;
   }
 
   .left-container1 {

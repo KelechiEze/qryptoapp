@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: 6rem 4rem;
   background-color: #f5f6fe;
   font-family: Arial, sans-serif;
   overflow: hidden;
@@ -207,3 +207,68 @@
     opacity: 1;
   }
 }
+/* Mobile responsive styles for 375px screens */
+@media (max-width: 375px) {
+  /* About Section */
+  .about-section {
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  /* About Content */
+  .about-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* Left Container (Text and Form) */
+  .left3 {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .about-title {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-form {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 1rem;
+  }
+
+  .email-input {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Right Container (Images) */
+  .right3 {
+    max-width: 100%;
+    justify-content: center;
+    position: relative;
+  }
+
+  .coins {
+    width: 120px; /* Resize the coins image for smaller screens */
+    top: -10px;
+    left: -30px;
+  }
+
+  .phones {
+    width: 280px; /* Resize the phone mockup image */
+  }
+}
+

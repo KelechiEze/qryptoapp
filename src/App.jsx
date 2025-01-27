@@ -9,6 +9,7 @@ import Testimonial from "./components/Testimonial";
 import BlogSection from "./components/BlogSection";
 import Footer from "./components/Footer";
 import AboutPage from "./components/AboutPage";
+import MarketPage from "./components/MarketPage";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         />
         {/* About page */}
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/market" element={<MarketPage />} />
       </Routes>
     </Router>
   );

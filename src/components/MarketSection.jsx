@@ -5,13 +5,13 @@ import "./AboutSection.css"; // Import the CSS file
 import coinsImage from "../assets/herocoin.png"; // Update the path to match your folder structure
 import phonesImage from "../assets/boutland1.png"; // Update the path to match your folder structure
 
-const AboutSection = () => {
+const MarketSection = () => {
   return (
     <section className="about-section">
       <div className="about-content">
         {/* Left Container */}
         <div className="left3">
-          <h1 className="about-title">I love you babe</h1>
+          <h1 className="about-title">Market Update</h1>
           <p className="about-description">
             Investing in cryptocurrencies can be an exciting journey, but it's essential to approach it with caution and diligence.
           </p>
@@ -51,4 +51,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default MarketSection;
