@@ -11,7 +11,7 @@ const AboutSection = () => {
       <div className="about-content">
         {/* Left Container */}
         <div className="left3">
-          <h1 className="about-title">I love you babe</h1>
+          <h1 className="about-title">About Paycoin</h1>
           <p className="about-description">
             Investing in cryptocurrencies can be an exciting journey, but it's essential to approach it with caution and diligence.
           </p>

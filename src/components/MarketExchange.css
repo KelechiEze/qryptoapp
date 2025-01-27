@@ -1,0 +1,188 @@
+.market-section {
+    padding: 0.9rem;
+    background-color: #f9fafb;
+    text-align: center;
+  }
+  
+  .market-header {
+    margin-bottom: 2rem;
+  }
+  
+  .update-badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #5b67f2;
+    background-color: #eef2ff;
+    padding: 0.3rem 0.7rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #333;
+  }
+  
+  .market-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .market-card {
+    background-color: #fff;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .market-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .market-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures the chart icon aligns right */
+    gap: 0.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .market-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .market-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .market-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .market-subtitle {
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+  
+  .market-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .market-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+  }
+  
+  .market-stats {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .profit-positive {
+    font-size: 0.63rem;
+    color: #10b981;
+    font-weight: bold;
+  }
+  
+  .percentage-positive {
+    font-size: 0.67rem;
+    color: #10b981;
+    background-color: #eafff3;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+  }
+  
+  .profit-negative {
+    font-size: 0.7rem;
+    color: #ef4444;
+    font-weight: bold;
+  }
+  
+  .chart-icon-inline {
+    width: 40px;
+    height: auto;
+  }
+  @media (max-width: 375px) {
+    .market-section {
+      padding: 0.6rem; /* Adjust padding for smaller screens */
+    }
+  
+    .section-title {
+      font-size: 1.2rem; /* Reduce the title size */
+    }
+  
+    .market-cards {
+      grid-template-columns: 1fr; /* Display one card per row */
+      gap: 0.8rem; /* Reduce the gap between cards */
+    }
+  
+    .market-card {
+      padding: 0.8rem; /* Reduce padding for smaller cards */
+    }
+  
+    .market-info {
+      flex-direction: row; /* Keep items in a row */
+      justify-content: space-between;
+      gap: 0.4rem; /* Adjust spacing between elements */
+      margin-bottom: 0.8rem; /* Reduce bottom margin */
+    }
+  
+    .market-icon {
+      width: 30px; /* Scale down icon size */
+      height: 30px;
+    }
+  
+    .market-title {
+      font-size: 0.8rem; /* Reduce title size */
+    }
+  
+    .market-subtitle {
+      font-size: 0.7rem; /* Scale down subtitle size */
+    }
+  
+    .chart-icon-inline {
+      width: 30px; /* Adjust chart image size */
+    }
+  
+    .market-details {
+      flex-direction: column; /* Stack details vertically */
+      align-items: flex-start; /* Align text to the left */
+    }
+  
+    .market-price {
+      font-size: 0.9rem; /* Reduce font size for price */
+      margin-bottom: 0.4rem; /* Add spacing between price and stats */
+    }
+  
+    .market-stats {
+      gap: 0.4rem; /* Adjust gap between stats */
+    }
+  
+    .profit-positive,
+    .profit-negative {
+      font-size: 0.6rem; /* Scale down profit text */
+    }
+  
+    .percentage-positive {
+      font-size: 0.6rem; /* Adjust font size for percentage */
+      padding: 0.15rem 0.4rem; /* Adjust padding */
+    }
+  }
+  

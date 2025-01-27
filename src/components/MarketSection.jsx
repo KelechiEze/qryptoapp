@@ -13,7 +13,7 @@ const MarketSection = () => {
         <div className="left3">
           <h1 className="about-title">Market Update</h1>
           <p className="about-description">
-            Investing in cryptocurrencies can be an exciting journey, but it's essential to approach it with caution and diligence.
+          Ride the crypto wave! Get electrifying market updates, spot trends, and unlock opportunities before they take off!
           </p>
           <form className="cta-form">
             <input
