@@ -199,12 +199,12 @@
 
 /* Media query for 375px screens */
 @media screen and (max-width: 375px) {
-  .crypto-exchange-section {
+  .crypto-exchange-section1 {
     padding: 2rem 1.5rem; /* Reduce padding for smaller screens */
     background-size: cover; /* Keep the background image responsive */
   }
 
-  .highlight {
+  .highlight9 {
     font-size: 0.7rem; /* Adjust font size for smaller screens */
     padding: 0.2rem 0.5rem; /* Reduce padding inside highlight */
     margin-bottom: 0.8rem; /* Adjust spacing below */
@@ -215,22 +215,22 @@
     margin-bottom: 1.5rem; /* Reduce spacing below */
   }
 
-  .stats-container {
+  .stats-container2 {
     flex-direction: column; /* Stack stats vertically */
     gap: 1rem; /* Reduce spacing between items */
     padding: 2rem; /* Reduce padding inside the container */
     width: 100%; /* Adjust to fit screen width */
   }
 
-  .stat-title {
+  .stat-title3 {
     font-size: 0.8rem; /* Adjust size for titles */
   }
 
-  .stat-value {
+  .stat-value2 {
     font-size: 1.5rem; /* Adjust size for values */
   }
 
-  .divider {
+  .divider2 {
     display: none; /* Hide divider on smaller screens */
   }
 
@@ -261,12 +261,12 @@
 
 /* Media query for 425px screens */
 @media screen and (max-width: 425px) and (min-width: 376px) {
-  .crypto-exchange-section {
+  .crypto-exchange-section1 {
     padding: 2rem 2rem; /* Slightly increase padding for larger screens */
     background-size: cover; /* Ensure the background image remains responsive */
   }
 
-  .highlight {
+  .highlight9 {
     font-size: 0.8rem; /* Slightly larger font size */
     padding: 0.3rem 0.6rem; /* Adjust padding inside highlight */
     margin-bottom: 1rem; /* Adjust spacing below */
@@ -277,22 +277,22 @@
     margin-bottom: 1.8rem; /* Adjust spacing below */
   }
 
-  .stats-container {
+  .stats-container2 {
     flex-direction: column; /* Stack stats vertically (same as 375px) */
     gap: 1.5rem; /* Slightly larger gap between items */
     padding: 2.5rem; /* Adjust padding inside the container */
     width: 90%; /* Adjust width slightly */
   }
 
-  .stat-title {
+  .stat-title3 {
     font-size: 0.9rem; /* Slightly larger font size for titles */
   }
 
-  .stat-value {
+  .stat-value2 {
     font-size: 1.7rem; /* Slightly larger size for values */
   }
 
-  .divider {
+  .divider2 {
     display: none; /* Keep divider hidden */
   }
 

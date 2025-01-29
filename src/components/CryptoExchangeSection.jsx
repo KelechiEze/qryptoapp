@@ -25,13 +25,13 @@ const CryptoExchangeSection = () => {
           </div>
           <div className="divider2"></div>
           <div className="stat">
-            <p className="stat-title">Digital Assets</p>
-            <h3 className="stat-value">2M+</h3>
+            <p className="stat-title3">Digital Assets</p>
+            <h3 className="stat-value2">2M+</h3>
           </div>
-          <div className="divider"></div>
+          <div className="divider2"></div>
           <div className="stat">
-            <p className="stat-title">Happy Users</p>
-            <h3 className="stat-value">450+</h3>
+            <p className="stat-title3">Happy Users</p>
+            <h3 className="stat-value2">450+</h3>
           </div>
         </div>
       </div>
