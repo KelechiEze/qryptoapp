@@ -1,5 +1,5 @@
 import React from "react";
-import "./LandingPage.css";
+import "./LandingPages.css";
 // Font Awesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,7 +9,7 @@ import {
   faPlug,
 } from "@fortawesome/free-solid-svg-icons";
 
-const LandingPage = () => {
+const LandingPages = () => {
   return (
     <div className="landing-page-container">
       {/* Left Container */}
@@ -52,4 +52,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default LandingPages;

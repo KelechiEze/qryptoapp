@@ -7,7 +7,7 @@ import avatarImage from "../assets/lite.png";
 
 const CryptoExchangeSection = () => {
   return (
-    <section className="crypto-exchange-section">
+    <section className="crypto-exchange-section1">
       {/* Floating Images */}
       <img src={dogeImage} alt="Doge" className="floating-icon icon-doge" />
       <img src={bitcoinImage} alt="Bitcoin" className="floating-icon icon-bitcoin" />
@@ -16,14 +16,14 @@ const CryptoExchangeSection = () => {
 
       {/* Section Content */}
       <div className="content-wrapper">
-        <span className="highlight">Fact PayCoin Crypto Investment</span>
+        <span className="highlight9">Fact PayCoin Crypto Investment</span>
         <h3 className="section-title1">Invest Crypto Securely</h3>
-        <div className="stats-container">
-          <div className="stat">
-            <p className="stat-title">Bitcoin</p>
-            <h3 className="stat-value">5M+</h3>
+        <div className="stats-container2">
+          <div className="stat2">
+            <p className="stat-title3">Bitcoin</p>
+            <h3 className="stat-value2">5M+</h3>
           </div>
-          <div className="divider"></div>
+          <div className="divider2"></div>
           <div className="stat">
             <p className="stat-title">Digital Assets</p>
             <h3 className="stat-value">2M+</h3>

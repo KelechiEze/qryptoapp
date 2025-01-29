@@ -26,7 +26,10 @@ const Header = () => {
         <NavLink to="/blog" className="nav-link">Blog</NavLink>
         <NavLink to="/contact" className="nav-link">Contact</NavLink>
       </nav>
-      <NavLink to="/register" className="sign-in-button">Sign In</NavLink>
+      <a href="https://mydazhboard.netlify.app/" target="_blank" rel="noopener noreferrer" className="sign-in-button">
+  Sign In
+</a>
+
 
       {/* Hamburger Icon */}
       <div className="hamburger" onClick={toggleMenu}>

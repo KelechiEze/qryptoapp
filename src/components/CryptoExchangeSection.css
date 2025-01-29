@@ -1,4 +1,4 @@
-.crypto-exchange-section {
+.crypto-exchange-section1 {
   position: relative;
   padding: 5rem 7rem;
   background-color: #f9fafb;
@@ -34,7 +34,7 @@
 }
 
 /* Highlight Text */
-.highlight {
+.highlight9 {
   display: inline-block;
   font-size: 0.9rem;
   font-weight: bold;
@@ -81,7 +81,7 @@
 }
 
 /* Stats Container */
-.stats-container {
+.stats-container2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@
 }
 
 /* Individual Stat */
-.stat {
+.stat2 {
   text-align: center;
   animation: zoomIn 1.2s ease-out;
 }
@@ -126,20 +126,20 @@
   }
 }
 
-.stat-title {
+.stat-title3 {
   font-size: 1rem;
   color: #6b7280;
   margin-bottom: 0.5rem;
 }
 
-.stat-value {
+.stat-value2 {
   font-size: 2rem;
   font-weight: bold;
   color: #1f2937;
 }
 
 /* Divider */
-.divider {
+.divider2 {
   width: 1px;
   height: 3rem;
   background: #e5e7eb;
