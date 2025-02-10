@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import Header from "./components/Header";
 import LandingPages from "./components/LandingPages";
 import WhyChooseSection from "./components/WhyChooseSection";
+import InvestmentPlans from "./components/InvestmentPlans";
 import CryptoExchangeSection from "./components/CryptoExchangeSection";
 import MarketTable from "./components/MarketTable";
 import Testimonial from "./components/Testimonial";
@@ -28,6 +29,7 @@ const App = () => {
           <>
             <LandingPages />
             <WhyChooseSection />
+            <InvestmentPlans />
             <CryptoExchangeSection />
             <MarketTable />
             <Testimonial />

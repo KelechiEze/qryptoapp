@@ -141,6 +141,39 @@
     margin-bottom: 1rem;
 }
 
+/* BUTTON STYLES */
+.get-started-button1 {
+    display: inline-block;
+    padding: 1.2rem 1.5rem;
+    background-color: #2563eb;
+    color: white;
+    margin-top: 30px;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 10; /* Ensures it is above overlays */
+    pointer-events: auto; /* Ensure it is clickable */
+  }
+  
+  /* Button Hover Effect */
+  .get-started-button1:hover {
+    background-color: orangered;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Button Focus (for accessibility) */
+  .get-started-button1:focus {
+    outline: none;
+  }
+  
+
 /* Cards Container */
 .cards-container {
     position: relative;
@@ -241,6 +274,13 @@
         left: 20%;
     }
 
+    .get-started-button1 {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+    }
+
     /* Adjust typography */
     .highlight {
         font-size: 0.6rem; /* Reduce text size */
@@ -325,6 +365,12 @@
         left: 20%; /* Center image better */
     }
 
+    .get-started-button1 {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+    }
     .profile-card-image {
         position: relative; /* Ensure proper positioning */
         bottom: 30%; /* Adjust positioning for smaller screens */

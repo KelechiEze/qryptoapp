@@ -10,6 +10,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const LandingPages = () => {
+  
+
   return (
     <div className="landing-page-container">
       {/* Left Container */}
@@ -18,7 +20,6 @@ const LandingPages = () => {
         <p className="landing-text">
         Empower your future with blockchain. Secure, transparent, and limitless—invest in crypto today and be part of the revolution shaping tomorrow
         </p>
-        <button className="get-started-button">Get Started</button>
       </div>
 
       {/* Right Container */}
@@ -27,13 +28,13 @@ const LandingPages = () => {
           <div className="feature-icon">
             <FontAwesomeIcon icon={faBolt} />
           </div>
-          <p>Instant Connection</p>
+          <p>Instant Purchases</p>
         </div>
         <div className="feature-card1">
           <div className="feature-icon">
             <FontAwesomeIcon icon={faBriefcase} />
           </div>
-          <p>Instant Conclusion</p>
+          <p>Top-Notch Management</p>
         </div>
         <div className="feature-card1">
           <div className="feature-icon">
@@ -45,7 +46,7 @@ const LandingPages = () => {
           <div className="feature-icon">
             <FontAwesomeIcon icon={faPlug} />
           </div>
-          <p>Power Distribution</p>
+          <p>Fast Connections</p>
         </div>
       </div>
     </div>

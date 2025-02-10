@@ -22,7 +22,7 @@ const WhyChooseSection = () => {
           Where Innovation Meets <span className="gradient-text">Cryptocurrency Trading</span>
         </h2>
         <p className="paragraph">
-          At PayCoin, we pride ourselves on offering a user-friendly platform that caters to both novice traders & seasoned PayCoin investors.
+          At PayCoin, we pride ourselves on offering a user-friendly platform that caters to both novice & seasoned PayCoin investors.
         </p>
 
         {/* Cards Container */}
@@ -44,6 +44,16 @@ const WhyChooseSection = () => {
       </div>
     </div>
   </div>
+  <button
+  className="get-started-button1"
+  onClick={() => {
+    console.log("Button Clicked!"); // Debugging
+    window.open("https://dashboardkrypt.netlify.app/", "_blank");
+  }}
+  style={{ position: "relative", zIndex: 1000, pointerEvents: "auto" }}
+>
+  Get Started
+</button>
   </div>
       </div>
     </section>

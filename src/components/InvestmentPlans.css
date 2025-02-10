@@ -1,0 +1,126 @@
+/* General Section Styles */
+.investment-section {
+    background-color: #fffde0;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.investment-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3d3d00;
+}
+
+.investment-subtitle {
+    font-size: 16px;
+    color: #8a8a50;
+    margin-bottom: 30px;
+}
+
+/* Plans Container */
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Individual Plan Cards */
+.plan-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    border: 2px solid transparent; /* Default border */
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.plan-card:hover {
+    border-color: #a3a34f; /* Brown border on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Icon Styling */
+.plan-icon {
+    font-size: 40px;
+    color: #6ec1e4; /* Light blue color */
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 50px;
+    color: #6ec1e4; /* Light blue color */
+}
+
+/* Plan Text Styling */
+.plan-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3d3d00;
+}
+
+.plan-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3d3d00;
+    margin: 10px 0;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.plan-features li {
+    margin: 5px 0;
+}
+
+/* Recommended Plan Styling */
+.recommended {
+    border: 2px solid #a3a34f; /* Brown border for the recommended plan */
+}
+
+/* Recommended Tag */
+.recommended-tag {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2563eb;
+    color: white;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
+/* Select Button */
+.plan-button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.plan-button:hover {
+    background-color: #8a8a50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plans-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

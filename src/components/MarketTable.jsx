@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Line } from "react-chartjs-2";
 import "./MarketTable.css";
 
@@ -65,7 +66,7 @@ const MarketTable = () => {
           <div>LAST PRICE</div>
           <div>24 CHANGE</div>
           <div>CHART</div>
-          <div>TRADE</div>
+          <div>INVEST</div>
         </div>
         {data.map((row, index) => (
           <div className="table-row" key={index}>
@@ -83,7 +84,9 @@ const MarketTable = () => {
                 <Line data={generateChartData()} options={chartOptions} />
               </div>
             </div>
-            <button className="trade-btn">Trade</button>
+            <NavLink className="trade-btn" to="https://mydazhboard.netlify.app/">
+               Start Now
+            </NavLink>
           </div>
         ))}
       </div>
