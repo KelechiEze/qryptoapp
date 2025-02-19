@@ -24,7 +24,7 @@ const InvestmentPlans = () => {
             <li>Basic market analysis tools</li>
             <li>Email support</li>
           </ul>
-          <a href="https://dashboardkrypt.netlify.app/" target="_blank" rel="noopener noreferrer" className="plan-button">
+          <a href="https://paycoindashboard.netlify.app/" target="_blank" rel="noopener noreferrer" className="plan-button">
             SELECT
           </a>
         </div>
@@ -43,7 +43,7 @@ const InvestmentPlans = () => {
             <li>Portfolio management assistance</li>
             <li>Priority email support</li>
           </ul>
-          <a href="https://dashboardkrypt.netlify.app/" target="_blank" rel="noopener noreferrer" className="plan-button">
+          <a href="https://paycoindashboard.netlify.app/" target="_blank" rel="noopener noreferrer" className="plan-button">
             SELECT
           </a>
         </div>
@@ -61,7 +61,7 @@ const InvestmentPlans = () => {
             <li>Dedicated account manager</li>
             <li>24/7 priority support</li>
           </ul>
-          <a href="https://dashboardkrypt.netlify.app/" target="_blank" rel="noopener noreferrer" className="plan-button">
+          <a href="https://paycoindashboard.netlify.app/" target="_blank" rel="noopener noreferrer" className="plan-button">
             SELECT
           </a>
         </div>

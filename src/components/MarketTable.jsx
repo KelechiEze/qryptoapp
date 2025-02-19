@@ -84,7 +84,7 @@ const MarketTable = () => {
                 <Line data={generateChartData()} options={chartOptions} />
               </div>
             </div>
-            <NavLink className="trade-btn" to="https://mydazhboard.netlify.app/">
+            <NavLink className="trade-btn" to="https://paycoindashboard.netlify.app/">
                Start Now
             </NavLink>
           </div>

@@ -114,7 +114,7 @@
   }
   
   .info-icon6 {
-    width: 60%;
+    width: 12%;
     height: auto;
   }
   
@@ -176,13 +176,14 @@
       gap: 0.5rem;
     }
   
-    .icon-container6 {
+    .icon-item6 {
       width: 40px; /* Reduce icon size */
       height: 40px;
     }
   
-    .info-icon6 {
-      width: 80%; /* Reduce the image size */
+   .info-icon6 {
+      max-width: 70%; /* Reduce the image size */
+      width: 50%;
     }
   
     .info-text6 h4 {

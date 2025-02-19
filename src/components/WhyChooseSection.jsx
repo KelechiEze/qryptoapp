@@ -48,7 +48,7 @@ const WhyChooseSection = () => {
   className="get-started-button1"
   onClick={() => {
     console.log("Button Clicked!"); // Debugging
-    window.open("https://dashboardkrypt.netlify.app/", "_blank");
+    window.open("https://paycoindashboard.netlify.app/", "_blank");
   }}
   style={{ position: "relative", zIndex: 1000, pointerEvents: "auto" }}
 >

@@ -12,8 +12,8 @@ const MarketExchange = () => {
   return (
     <section className="market-section">
       <div className="market-header">
-        <span className="update-badge">Today Market Update</span>
-        <h2 className="section-title">Today's Cryptocurrency Prices</h2>
+        <span className="update-badge">SIGN UP WITH US</span>
+        <h2 className="section-title">Start Investing today for a better finance story</h2>
       </div>
       <div className="market-cards">
         {/* Card 1: Estimated Balance */}
