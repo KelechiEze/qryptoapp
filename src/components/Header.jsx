@@ -58,7 +58,7 @@ const Header = () => {
 
           {/* Sign In Button */}
           <a
-            href="https://paycoindashboard.netlify.app/"
+            href="https://paycoin-dashboard.netlify.app/signup"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary ms-3"
